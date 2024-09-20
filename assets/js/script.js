@@ -97,7 +97,7 @@ const update = (id) => {
   let newName = prompt("Ingrese el nuevo nombre del gasto");
   let newValue = prompt("Ingrese el nuevo valor del gasto");
 
-  console.log(newName)
+  console.log(newName);
   console.log(newValue);
 
   //Verificamos que existan valores a modificar y modificamos
@@ -111,4 +111,3 @@ const update = (id) => {
   //Actualizamos la interfaz
   showExpenses();
 };
-
