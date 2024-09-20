@@ -54,9 +54,7 @@ const showExpenses = () => {
     list += `<li> 
     
     <span class='textList'>
-    <b>${expense.name}:</b>&ensp;COP&ensp;${formater.format(
-      expense.value
-    )}
+    <b>${expense.name}:</b>&ensp;COP&ensp;${formater.format(expense.value)}
     </span>
     <span class='btns'>
     <button class='btnUpdate' onclick='update("${
@@ -81,7 +79,6 @@ const showExpenses = () => {
 };
 
 const remove = (id) => {
-
   //obtener el indice el elemnto a eliminar
   let elementToRemove = expenses.findIndex((expense) => expense.id == id);
 
@@ -93,7 +90,6 @@ const remove = (id) => {
 };
 
 const update = (id) => {
-
   //Obtenemos el indice del elemento a actualizar
   let elementToRemove = expenses.findIndex((expense) => expense.id == id);
 
@@ -101,10 +97,18 @@ const update = (id) => {
   let newName = prompt("Ingrese el nuevo nombre del gasto");
   let newValue = prompt("Ingrese el nuevo valor del gasto");
 
-  //Modificamos el elemento
-  expenses[elementToRemove].name = newName;
-  expenses[elementToRemove].value = Number(newValue);
+  console.log(newName)
+  console.log(newValue);
+
+  //Verificamos que existan valores a modificar y modificamos
+  if (newName != "" && newName != null) {
+    expenses[elementToRemove].name = newName;
+  }
+  if (newValue != "" && newValue != null) {
+    expenses[elementToRemove].value = Number(newValue);
+  }
 
   //Actualizamos la interfaz
   showExpenses();
 };
+
