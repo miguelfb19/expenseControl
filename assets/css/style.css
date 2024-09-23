@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
+:root{
+  --green: #4cae4c;
+  --blue: #1875e8;
+}
 body {
   font-family: Arial, sans-serif;
   background-size: auto;
@@ -38,7 +42,7 @@ input[type="number"] {
 button {
   padding: 10px 40px;
   width: fit-content;
-  background-color: #1875e8;
+  background-color: var(--blue);
   color: #fff;
   font-size: 1.2rem;
   border: none;
@@ -52,7 +56,7 @@ button {
 }
 
 .btnAdd:hover{
-  background-color: #4cae4c;
+  background-color: var(--green);
 }
 
 .btnSaveChanges{
@@ -60,7 +64,7 @@ button {
 }
 
 .btnSaveChanges:hover{
-  background-color: #4cae4c;
+  background-color: var(--green);
 }
 
 .btnRemove{
@@ -69,7 +73,7 @@ button {
 }
 
 .btnUpdate{
-  background-color: #4cae4c;
+  background-color: var(--green);
   transition: all ease 0.3s;
 }
 
@@ -116,7 +120,7 @@ ul li:last-child {
   border-radius: 24px;
   color: white;
   box-shadow: 4px 4px 20px 0px #01080e26;
-  border: 1px solid #1875e8;
+  border: 1px solid var(--blue);
 }
 
 .container {
@@ -148,7 +152,7 @@ ul li:last-child {
 
 .title2{
     font-size: 1em;
-    color: #1875e8;
+    color: var(--blue);
 }
 
 .form-group {
