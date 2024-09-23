@@ -46,7 +46,20 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
+.btnAdd{
+  display: block;
+}
+
 .btnAdd:hover{
+  background-color: #4cae4c;
+}
+
+.btnSaveChanges{
+  display: none;
+}
+
+.btnSaveChanges:hover{
   background-color: #4cae4c;
 }
 
@@ -151,4 +164,18 @@ ul li:last-child {
   text-align: center;
   color: #fff;
   margin-bottom: 5%;
+}
+
+.redAlert{
+  background-color: red;
+  font-size: 0.9em;
+  width: 100%;
+  padding: 0.7em;
+  display: none;
+  justify-content: center;
+}
+
+.not-allowed{
+  opacity: 0.3;
+  cursor: not-allowed;
 }
