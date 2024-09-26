@@ -148,6 +148,7 @@ ul li:last-child {
 .title {
     font-family: "Chakra Petch", sans-serif;
     margin: 0 auto;
+    text-align: center;
 }
 
 .title2{
@@ -177,9 +178,66 @@ ul li:last-child {
   padding: 0.7em;
   display: none;
   justify-content: center;
+  text-align: center;
 }
 
 .not-allowed{
   opacity: 0.3;
   cursor: not-allowed;
 }
+
+/* ==================================================================== */
+/* MEDIA QUERYS */
+/* ==================================================================== */
+
+/* ==================================================================== */
+/* PC PEQUEÑO - IPAD GRANDE */
+/* ==================================================================== */
+
+@media (max-width: 1024px) {
+
+  .main-container{
+    width: 80%;
+    font-size: 1.5em;
+  }
+
+  .form-group{
+    width: 70%;
+  }
+
+  .form-group input, button{
+    font-size: 1em;
+  }
+
+  .total{
+    font-size: 1.5em;
+  }
+}
+
+/* ==================================================================== */
+/* IPAD MEDIANO */
+/* ==================================================================== */
+
+@media (max-width: 850px) {
+
+  .main-container{
+    width: 90%;
+  }
+}
+
+/* ==================================================================== */
+/* PHONE */
+/* ==================================================================== */
+
+@media (max-width: 500px) {
+
+  .main-container{
+    font-size: 1em;
+  }
+
+  ul li {
+    flex-direction: column;
+    row-gap: 1em;
+  }
+}
+
